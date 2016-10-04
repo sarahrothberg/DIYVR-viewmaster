@@ -14,11 +14,11 @@ public class SimpleTrigerableFunctions : MonoBehaviour {
 	}
 
 	public void turnOnComponent(){
-		activatableComponent.SetActive (false);
+		GetComponent<Renderer> ().enabled = true; 
 	}
 
 	public void turnOffComponent(){
-		activatableComponent.SetActive (false);
+		GetComponent<Renderer> ().enabled = false; 
 	}
 
 	//Note: SetActive is for gameObjects and enabled is for Components on the Object
